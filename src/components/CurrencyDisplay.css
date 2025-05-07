@@ -1,0 +1,16 @@
+.currency-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.currency-display-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-display-yesterday {
+    color: gray;
+}

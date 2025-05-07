@@ -1,0 +1,7 @@
+.menu-item {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    gap: 10px;
+    color: white;
+}
