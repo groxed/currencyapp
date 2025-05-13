@@ -1,4 +1,4 @@
-import { styled, Switch, useColorScheme } from '@mui/material'
+import { styled, Switch, useColorScheme, useTheme } from '@mui/material'
 
 const ModeSwitchELement = styled(Switch)(({ theme }) => ({
     position: 'absolute',
@@ -62,11 +62,17 @@ const ModeSwitchELement = styled(Switch)(({ theme }) => ({
 
 export const ModeSwitch = () => {
     const { setMode } = useColorScheme()
+    const isDefaultDarkMode = useTheme().palette.mode === 'dark'
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const isDarkMode = event.target.checked
         setMode(isDarkMode ? 'dark' : 'light')
     }
 
-    return <ModeSwitchELement onChange={handleChange} />
+    return (
+        <ModeSwitchELement
+            checked={isDefaultDarkMode}
+            onChange={handleChange}
+        />
+    )
 }

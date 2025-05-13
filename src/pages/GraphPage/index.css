@@ -1,0 +1,28 @@
+.graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-pickers-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 30px;
+}
+
+.date-pickers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.date-pickers-validation-error {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    padding-top: 10px;
+}

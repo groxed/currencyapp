@@ -4,4 +4,14 @@
     padding: 30px;
     gap: 10px;
     color: white;
+    box-sizing: border-box;
+}
+
+.menu-item.expanded:hover {
+    background-color: #57845d;
+    cursor: pointer;
+}
+
+.menu-item.expanded.dark:hover {
+    background-color: #586873;
 }

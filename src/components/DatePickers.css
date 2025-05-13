@@ -1,0 +1,17 @@
+.date-pickers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pickers {
+    display: flex;
+    gap: 20px;
+}
+
+.date-pickers-validation-error {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}

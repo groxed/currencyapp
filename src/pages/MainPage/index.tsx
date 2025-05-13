@@ -1,12 +1,9 @@
-import { use, useEffect, useState } from 'react'
-import { fetchData } from '../helpers/fetchData'
-import { Currency } from '../interfaces/Currency'
-import { mapCurrencyDataByCode } from '../helpers/mapCurrencyDataByCode'
-import { CurrencyDTO } from '../interfaces/CurrencyDTO'
-import { CurrencyDisplay } from '../components/CurrencyDisplay'
+import { useEffect, useState } from 'react'
+import { Currency } from '../../interfaces/Currency'
+import { CurrencyDisplay } from '../../components/CurrencyDisplay'
+import { fetchCurrencyData } from '../../helpers/fetchCurrencyData'
+import { getYesterdaysDate } from '../../helpers/dateUtils'
 import './index.css'
-import { fetchCurrencyData } from '../helpers/fetchCurrencyData'
-import { getYesterdaysDate } from '../helpers/dateUtils'
 
 export const MainPage = () => {
     const [currencies, setCurrencies] = useState<Currency[]>([])
